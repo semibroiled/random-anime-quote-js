@@ -1,0 +1,177 @@
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #c9bd95;
+  }
+  
+  .app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color:rgb(22, 206, 129);
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  
+  header {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  #title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-style: oblique;
+  }
+  
+  .quotes {
+    padding: 20px 50px;
+    min-height: 200px;
+  }
+  
+  .quote-text {
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: black;
+  }
+  
+  .controls {
+    width: 100%;
+    padding: 20px 50px;
+  }
+  
+  .button {
+    display: ruby-base;
+    color: rgb(22, 180, 219);
+    border-radius: 4px;
+    background-color:greenyellow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(202, 14, 14, 0.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+
+  .button:hover{
+      background-color: royalblue;
+  }
+
+  .quote-button {
+    background-color: #cf15e0;
+    margin-bottom: 15px;
+  }
+  
+  .quote-button:hover {
+    background-color: #6d3b0e;
+  }
+  
+  .quote-button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .app {
+      width: 100%;
+    }
+    .quote-text {
+      font-size: 18px;
+    }
+  }
+
+#quote-char {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
+#quote-anime{
+    font: caption;
+    font-size: small;
+    font-style: italic;
+    font-weight: 200;
+}
+
+#anime-quote{
+    font: caption;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: 200;
+}
+.twitter-button {
+    background-color: #1da1f2;
+    text-decoration: none;
+  }
+  
+.twitter-button:hover {
+    background-color: #1e7fbb;
+  }
+
+.spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 100px auto;
+  }
+
+  .spinner.hidden{
+    visibility: hidden;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
