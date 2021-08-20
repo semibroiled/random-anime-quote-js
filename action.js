@@ -1,5 +1,5 @@
 const quoteButton = document.querySelector('#quote-button');
-const endpoint_random = 'https://animechan.vercel.app/api/random';
+const apiurl = 'https://animechan.vercel.app/api/random';
 const spinner = document.querySelector('#spinner');
 const twitterButton = document.querySelector('#tweet');
 quoteButton.addEventListener('click', getQuote);
@@ -14,7 +14,7 @@ async function getQuote(){
     quoteButton.disabled = true;
 
     try{
-        const response = await fetch(endpoint_random);
+        const response = await fetch(apiurl);
         if (!response.ok){
             throw Error(response.statusText);
             }
