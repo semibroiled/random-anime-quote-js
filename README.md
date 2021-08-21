@@ -1,2 +1,3 @@
-# random-anime-quote
-Random Anime Quote Generator using JS &amp; HTML/CSS!
+# Random Anime Quote Generator 
+## with JS 
+###### & HTML/CSS!
